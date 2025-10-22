@@ -1,0 +1,67 @@
+body{
+
+background-color: rgb(41, 46, 29);
+
+}
+
+div{
+
+    padding: 0;
+    margin-top: 150px;
+    margin-left: 200px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+
+h1{
+
+    margin-left: 600px;
+    margin-bottom: 10;
+    color: #ffffff;
+
+}
+
+.img_1{
+
+    margin-left: 470px;
+    width: 500px;
+    height: 500px;
+    border: 25px solid;
+    border-style: double;
+
+}
+
+.img_2{
+
+
+    margin-left: 815px;
+    border: 25px solid;
+    border-style: double;
+
+}
+
+button{
+
+    margin-top: 100px;
+    margin-left: 560px;
+    font-size: x-large;
+
+}
+
+.botao2{
+
+    margin-left: 750px;
+
+}
+
+.textao{
+
+    margin-top: 300px;
+    margin-left: 850px;
+
+}

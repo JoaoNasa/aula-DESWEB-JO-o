@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox</title>
+    <style>
+        body {
+            
+            background-image: url(..//joao/img/caoruru.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        #container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #container > div {
+            width: 200px;
+            height: 180px;
+            background-image: url(..//joao/img/cururu.jpg);
+            background-size: cover;
+            background-position: center;
+            margin: 30px;
+
+            /* Formato de coração com clip-path */
+            clip-path: path('M 100 180 C 100 140, 0 120, 0 60 C 0 20, 40 0, 100 40 C 160 0, 200 20, 200 60 C 200 120, 100 140, 100 180 Z');
+            -webkit-clip-path: path('M 100 180 C 100 140, 0 120, 0 60 C 0 20, 40 0, 100 40 C 160 0, 200 20, 200 60 C 200 120, 100 140, 100 180 Z');
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px black;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div>1. Demo Flexbox</div>
+        <div>2. Demo Flexbox</div>
+        <div>3. Demo Flexbox</div>
+        <div>4. Demo Flexbox</div>
+        <div>5. Demo Flexbox</div>
+        <div>6. Demo Flexbox</div>
+        <div>7. Demo Flexbox</div>
+        <div>8. Demo Flexbox</div>
+        <div>9. Demo Flexbox</div>
+        <div>10. Demo Flexbox</div>
+        <div>11. Demo Flexbox</div>
+        <div>12. Demo Flexbox</div>
+    </div>
+</body>
+</html>
