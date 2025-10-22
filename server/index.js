@@ -15,3 +15,6 @@ dotenv.config();
 
 //nos configuramos o nosso framework (express)
 const app = express();
+
+//configurando a representatividade, indicamos para o servidor que ele vai receber e enviar um arquivo json
+app.use(express.json())
