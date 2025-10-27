@@ -25,17 +25,25 @@ const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY
 
 app.post("/pessoa", async (req,res) => {
 
-    const {nome, idade, curso} = req.body; //novo
+    const {nome, idade, curso} = req.body; 
     
-    const{data , error} =  await supabase //novo
-    .from("pessoa") //novo
-    .insert([{nome, idade, curso}]);//novo
+    const{data , error} =  await supabase 
+    .from("pessoa") 
+    .insert([{nome, idade, curso}]);
 
-    if (error) return res.status(400).json({message: "Erro ao inserir a pessoa"}) //novo
+    if (error) return res.status(400).json({message: "Erro ao inserir a pessoa"}) 
 
-    res.status(200).json( { message: "Deu certo o endpoint!!" } ) //novo
+    res.status(200).json( { message: "Deu certo o endpoint!!" } ) 
 
-})
+});
+
+app.get("/pessoa", async(req, res) => {
+
+    const {data, error} = await supabase.from("pessoa").select("*");
+    if (error) return res.status(400).json({message: "Erro ao inserir a pessoa"})
+    res.json(data);
+
+} )
 
 app.listen(3000, () => {
 
